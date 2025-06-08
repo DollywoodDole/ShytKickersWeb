@@ -1,43 +1,99 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
+
+/* Hero Banner */
+.hero-banner {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.hero-banner h1 {
+    font-size: 5rem;
+    font-weight: bold;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+
+.hero-banner .btn-primary {
+    background-color: #d9534f;
+    border-color: #d9534f;
 }
-nav a {
-  color: white;
-  text-decoration: none;
+
+.hero-banner .btn-primary:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
 }
-.hero {
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
-  padding: 4rem;
-  text-align: center;
-  color: white;
+
+/* Product Highlight */
+.product-highlight img {
+    max-width: 200px;
+    height: auto;
 }
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
+.product-highlight h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* About Brand */
+.about-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-brand h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Fund Section */
+.fund-section {
+    background-color: #f8f9fa;
+}
+
+.fund-section h2 {
+    font-size: 2.5rem;
+}
+
+/* Video/Proof */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-proof blockquote {
+    font-size: 1.5rem;
+}
+
+/* Reviews */
+.reviews p {
+    font-style: italic;
+}
+
+.reviews strong {
+    color: #d9534f;
+}
+
+/* Pre-Order */
+.preorder form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Signup */
+.signup .input-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

@@ -1,34 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShytKickers</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHYT KICKERS - Stomp Back</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img src="images/logo.png" alt="ShytKickers Logo" style="height: 50px;">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <h1>Welcome to ShytKickers</h1>
-      <p>Kickin’ up dust with the best tunes!</p>
+    <!-- Hero Banner -->
+    <header class="hero-banner text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold">SHYT KICKERS</h1>
+            <p class="lead">When life steps on you - stomp back.</p>
+            <a href="#product" class="btn btn-primary btn-lg me-2">PRE-ORDER NOW</a>
+            <a href="#fund" class="btn btn-outline-light btn-lg">WHAT'S THE FUND?</a>
+        </div>
+    </header>
+
+    <!-- Product Highlight Section -->
+    <section id="product" class="product-highlight py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">SHYT KICKERS FEATURES</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="placeholder.jpg" alt="Cowboy-Stitched Design" class="img-fluid mb-3">
+                    <h4>Cowboy-Stitched Design</h4>
+                    <p>Rugged, bold, and built to stand out.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="placeholder.jpg" alt="Kick-Back Strap" class="img-fluid mb-3">
+                    <h4>Kick-Back Strap</h4>
+                    <p>Secure fit for all-day comfort.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="placeholder.jpg" alt="Lightweight Foam Build" class="img-fluid mb-3">
+                    <h4>Lightweight Foam Build</h4>
+                    <p>Move freely without the weight.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <select id="colorSelect" class="form-select d-inline-block w-auto">
+                    <option value="">Select Color</option>
+                    <option value="black">Black</option>
+                    <option value="brown">Brown</option>
+                </select>
+                <button class="btn btn-primary btn-lg ms-2" onclick="addToCart()">PRE-ORDER NOW</button>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 ShytKickers. All rights reserved.</p>
-  </footer>
-  <script src="js/script.js"></script>
+
+    <!-- About the Brand -->
+    <section id="about" class="about-brand py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="placeholder.jpg" alt="Brand Lifestyle" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Not just a shoe. A movement.</h2>
+                    <p>SHYT KICKERS was born from a love of rebellious spirit, cowboy grit, and a whole lot of humor. We're not your typical footwear company - we design shoes for the outlaws, the trailblazers, the people who walk the fine line between chaos and charm.</p>
+                    <p>We're about more than just the product; we're here to make a statement - both on your feet and in the world. SHYT KICKERS are the symbol of not letting life step on you, but instead, stomping right back with a bold, confident, and uncompromising spirit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHYT HAPPENS Fund -->
+    <section id="fund" class="fund-section py-5">
+        <div class="container text-center">
+            <h2>SHYT HAPPENS. WE KICK BACK.</h2>
+            <p class="lead">Life kicks hard. The SHYT HAPPENS FUND is our way of giving back when life gives people the worst. A portion of every SHYT KICKERS sale goes into the fund, which we use to help people hit with hard times - medical bills, job losses, or other unforeseen challenges.</p>
+            <p>Every month, we choose a story to give back to - no red tape, no BS. Just us helping real people in need. Your purchase makes a direct impact.</p>
+            <a href="#nominate" class="btn btn-primary btn-lg">NOMINATE SOMEONE</a>
+        </div>
+    </section>
+
+    <!-- Video/Proof Section -->
+    <section id="video" class="video-proof py-5 bg-light">
+        <div class="container text-center">
+            <h2>Real Stories, Real Impact</h2>
+            <div class="video-container">
+                <video controls class="w-100">
+                    <source src="placeholder.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <blockquote class="blockquote mt-4">
+                <p>"These shoes gave me the confidence to keep going!"</p>
+                <footer class="blockquote-footer">Kayla R.</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What People Are Saying</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <p>"Tough as nails and comfy as hell!"</p>
+                    <p><strong>- Marcus L.</strong></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p>"Love the vibe and the cause!"</p>
+                    <p><strong>- Sarah T.</strong></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p>"Best purchase I've made this year."</p>
+                    <p><strong>- Jake P.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Order Section -->
+    <section id="preorder" class="preorder py-5 bg-light">
+        <div class="container text-center">
+            <h2>Pre-Order Your SHYT KICKERS</h2>
+            <p class="lead">Price: $69.00 | Ships in 4-6 weeks</p>
+            <form>
+                <div class="mb-3">
+                    <label for="color" class="form-label">Color</label>
+                    <select id="color" class="form-select">
+                        <option value="">Select Color</option>
+                        <option value="black">Black</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="size" class="form-label">Size</label>
+                    <select id="size" class="form-select">
+                        <option value="">Select Size</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg" onclick="addToCart()">Add to Cart</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section id="signup" class="signup py-5">
+        <div class="container text-center">
+            <h2>Get the Drop Before It Drops</h2>
+            <form id="emailForm" class="d-inline-block">
+                <div class="input-group">
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-2">"SHYT HAPPENS. STOMP BACK."</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#product" class="text-white">Shop</a></li>
+                <li class="list-inline-item"><a href="#fund" class="text-white">SHYT HAPPENS FUND</a></li>
+                <li class="list-inline-item"><a href="#nominate" class="text-white">Nominate</a></li>
+                <li class="list-inline-item"><a href="#faq" class="text-white">FAQ</a></li>
+                <li class="list-inline-item"><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="#" class="text-white mx-2">Instagram</a>
+                <a href="#" class="text-white mx-2">TikTok</a>
+                <a href="#" class="text-white mx-2">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
